@@ -1,31 +1,33 @@
 # Restaurant Page
 
-> A tic tac toe game built with Vanilla JavaScript. This is a game played by two players (with each player represented by the first character of their names respectively on the game board.) A winner is determined when one of the users has successfully placed his/her mark on a straight line (either diagonal, vertical or horizontal).
+> A restaurant webpage project intended at practicalising lessons on ES6 classes/modules and webpack. The main goal of this project is for the student to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
 
-![screenshot](assets/screenshot.png)
+![screenshot](src/assets/screenshot.png)
 
 ## Built With
 
-- JavaScript
+- HTML
+- CSS (Bootstrap)
+- JavaScript (ES6)
+- Webpack
 - ESLint
 - Stlylelint
-- Webpack
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/teekaytech/Tic-Tac-Toe-JS/666767bd321c87d28750ee236905de32a1627c83/index.html" target="_blank">Tic Tac Toe</a>
+<a href="https://rawcdn.githack.com/teekaytech/Tic-Tac-Toe-JS/666767bd321c87d28750ee236905de32a1627c83/index.html" target="_blank">Restaurant Page</a>
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-- On the project GitHub page, navigate to the main page of the repository [this page](https://github.com/teekaytech/Tic-Tac-Toe-JS.git).
+- On the project GitHub page, navigate to the main page of the repository [this page](https://github.com/teekaytech/Restaurant-Page.git).
 - Under the repository name, locate and click on a green button named `Code`.
 - Copy the project URL as displayed.
 - If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal.
 - Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
 - Type `git clone`, and then paste the URL you copied in Step 3.<br>
-  `$ git clone https://github.com/teekaytech/Tic-Tac-Toe-JS.git`
+  `$ git clone https://github.com/teekaytech/Restaurant-Page.git ` <em>Press Enter key</em><br>
 - Press Enter. Your local copy will be created.
 
 Please Note that you must have github installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
@@ -36,7 +38,16 @@ Web browser (Chrome/Firefox)
 
 ### Usage
 
-Start the app by copying and pasting the absolute path of the index file to your browser, then click on enter.
+Click on the live demo link and peruse the app.
+
+### Making Changes
+
+- `npm install` to install the dependencies and packages
+- `npm start` to test the app after changes were made
+
+- Run the following command simultaneously:
+
+  ``
 
 ## Author
 
@@ -45,6 +56,7 @@ Start the app by copying and pasting the absolute path of the index file to your
 - Github: [@teekaytech](https://github.com/teekaytech)
 - Twitter: [@ola_lere](https://twitter.com/ola_lere)
 - Linkedin: [olaleretaofeek](https://linkedin.com/in/olaleretaofeek)
+- Portfolio: [Olalere Taofeek](https://teekaytech.github.io/olaleretaofeek/)
 
 ## 🤝 Contributing
 
@@ -59,7 +71,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://.microverse.org/)
-- [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/tic-tac-toe-javascript)
+- [The Odin Project (Project Spec)](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
 ## 📝 License
 
