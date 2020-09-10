@@ -1,4 +1,4 @@
-import CreateElement from './domElements';
+import CreateElement from './elements';
 import createTabs from './tabs';
 
 const setHeader = (() => {

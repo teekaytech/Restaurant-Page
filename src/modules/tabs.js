@@ -1,4 +1,4 @@
-import CreateElement from './domElements';
+import CreateElement from './elements';
 
 const createTabs = (() => {
   const nav = CreateElement('nav', null, 'navbar', 'navbar');

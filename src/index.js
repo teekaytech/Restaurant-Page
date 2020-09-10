@@ -1,9 +1,9 @@
-import setHeader from './modules/pageHeader';
-import CreateElement from './modules/domElements';
+import setHeader from './modules/header';
+import CreateElement from './modules/elements';
 import createTabs from './modules/tabs';
 import Home from './modules/home';
 import Menu from './modules/menu';
-import Contact from './modules/concact';
+import Contact from './modules/contact';
 import './assets/styles.scss';
 
 const pageTabs = Array.from(createTabs.tabs);

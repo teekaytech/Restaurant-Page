@@ -1,5 +1,5 @@
-import CreateElement from './domElements';
-import Page from './pagesTemplate';
+import CreateElement from './elements';
+import Page from './template';
 import menu1 from '../assets/images/menu1.png';
 import menu2 from '../assets/images/menu2.png';
 import menu3 from '../assets/images/menu3.png';

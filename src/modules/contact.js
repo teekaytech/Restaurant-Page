@@ -1,5 +1,5 @@
-import CreateElement from './domElements';
-import Page from './pagesTemplate';
+import CreateElement from './elements';
+import Page from './template';
 
 class Contact extends Page {
   description() {
