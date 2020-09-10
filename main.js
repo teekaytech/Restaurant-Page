@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/pageHeader */ \"./src/modules/pageHeader.js\");\n\n\nconst parentContainer = document.getElementById('content');\nparentContainer.appendChild(_modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__[\"default\"].headerContainer);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/pageHeader */ \"./src/modules/pageHeader.js\");\n\n\nconst startPage = () => {\n  const parentContainer = document.getElementById('content');\n  parentContainer.appendChild(_modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__[\"default\"].headerContainer);\n};\n\nstartPage();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const DomElement = (name, id = '', classname = '', text = '') => {\n  const element = document.createElement(name);\n\n  element.className += classname;\n  element.setAttribute('id', id);\n  element.innerText = text;\n\n  return element;\n};\n\nmodule.exports = DomElement;\n\n//# sourceURL=webpack:///./src/modules/domElements.js?");
+eval("const CreateElement = (name, text, id = '', classname = '') => {\n  const element = document.createElement(name);\n\n  element.innerText = text;\n  element.className += classname;\n  element.setAttribute('id', id);\n\n  return element;\n};\n\nmodule.exports = CreateElement;\n\n//# sourceURL=webpack:///./src/modules/domElements.js?");
 
 /***/ }),
 
@@ -117,7 +117,7 @@ eval("const DomElement = (name, id = '', classname = '', text = '') => {\n  cons
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements */ \"./src/modules/domElements.js\");\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_domElements__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst Header = (() => {\n  const headerContainer = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('div');\n  const header = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('h1', 'h-text', '-text', 'Klass Restaurant');\n\n  headerContainer.appendChild(header);\n\n  return { headerContainer };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./src/modules/pageHeader.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements */ \"./src/modules/domElements.js\");\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_domElements__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst setHeader = (() => {\n  const headerContainer = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('div', '');\n  const header = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('h1', 'Klass Restaurant', 'h-text', 'h-text');\n\n  headerContainer.appendChild(header);\n\n  return { headerContainer };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (setHeader);\n\n//# sourceURL=webpack:///./src/modules/pageHeader.js?");
 
 /***/ })
 
