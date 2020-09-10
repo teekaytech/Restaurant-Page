@@ -1,4 +1,4 @@
-const CreateElement = (name, text, id = '', classname = '') => {
+const CreateElement = (name, text, id = null, classname = null) => {
   const element = document.createElement(name);
 
   element.innerText = text;

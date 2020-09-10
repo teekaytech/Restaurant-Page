@@ -8,7 +8,7 @@ class Page {
   }
 
   createContainer() {
-    return CreateElement('section', '', this.name, this.name);
+    return CreateElement('section', null, this.name, this.name);
   }
 
   createTitle() {

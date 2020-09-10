@@ -1,8 +1,8 @@
 import CreateElement from './domElements';
 
 const createTabs = (() => {
-  const nav = CreateElement('nav', '', 'navbar', 'navbar');
-  const tabList = CreateElement('ul', '', 'tabs');
+  const nav = CreateElement('nav', null, 'navbar', 'navbar');
+  const tabList = CreateElement('ul', null, 'tabs');
   const navItems = ['Home', 'Our Menu', 'Get in touch'];
 
   const doTabs = (items, list) => {

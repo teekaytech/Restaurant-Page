@@ -6,7 +6,7 @@ import HomePage from './modules/homePage';
 
 const pageTabs = Array.from(createTabs.tabs);
 const parentContainer = document.getElementById('content');
-const mainContainer = CreateElement('main', '', 'main');
+const mainContainer = CreateElement('main', null, 'main');
 const home = new HomePage(
   'home-page',
   'Welcome!',
