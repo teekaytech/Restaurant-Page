@@ -1,13 +1,28 @@
 import CreateElement from './domElements';
 
 class Page {
-  constructor(name) {
+  constructor(name, title, footer) {
     this.name = name;
+    this.footer = footer;
+    this.title = title;
   }
 
   createContainer() {
-    const container = CreateElement('div', '', this.name, this.name);
+    return CreateElement('section', '', this.name, this.name);
+  }
+
+  createTitle() {
+    return CreateElement('h3', this.title, 'title', 'title');
+  }
+
+  prepareContent() {
+    const container = this.createContainer();
+    container.appendChild(this.createTitle());
     return container;
+  }
+
+  createFooter() {
+    return CreateElement('footer', this.footer, 'footer', 'footer');
   }
 }
 
