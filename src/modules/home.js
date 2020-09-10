@@ -1,6 +1,6 @@
 import CreateElement from './domElements';
 import Page from './pagesTemplate';
-import homeIcon from '../assets/images/home.jpg';
+import homeIcon from '../assets/images/home.png';
 
 class Home extends Page {
   description() {
