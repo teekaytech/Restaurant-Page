@@ -1,4 +1,8 @@
-import Header from './modules/pageHeader';
+import setHeader from './modules/pageHeader';
 
-const parentContainer = document.getElementById('content');
-parentContainer.appendChild(Header.headerContainer);
+const startPage = () => {
+  const parentContainer = document.getElementById('content');
+  parentContainer.appendChild(setHeader.headerContainer);
+};
+
+startPage();

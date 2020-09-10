@@ -1,12 +1,12 @@
-import DomElement from './domElements';
+import CreateElement from './domElements';
 
-const Header = (() => {
-  const headerContainer = DomElement('div');
-  const header = DomElement('h1', 'h-text', '-text', 'Klass Restaurant');
+const setHeader = (() => {
+  const headerContainer = CreateElement('div', '');
+  const header = CreateElement('h1', 'Klass Restaurant', 'h-text', 'h-text');
 
   headerContainer.appendChild(header);
 
   return { headerContainer };
 })();
 
-export default Header;
+export default setHeader;

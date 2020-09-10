@@ -1,11 +1,11 @@
-const DomElement = (name, id = '', classname = '', text = '') => {
+const CreateElement = (name, text, id = '', classname = '') => {
   const element = document.createElement(name);
 
+  element.innerText = text;
   element.className += classname;
   element.setAttribute('id', id);
-  element.innerText = text;
 
   return element;
 };
 
-module.exports = DomElement;
+module.exports = CreateElement;
