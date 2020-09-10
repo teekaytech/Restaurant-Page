@@ -42,7 +42,7 @@ pageTabs.forEach(tab => {
         break;
 
       default:
-        mainContainer.innerHTML = null;
+        mainContainer.innerHTML = '';
         break;
     }
   });
