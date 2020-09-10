@@ -5,13 +5,17 @@ const createTabs = (() => {
   const tabList = CreateElement('ul', '', 'tabs');
   const navItems = ['Home', 'Our Menu', 'Get in touch'];
 
-  navItems.forEach((tab) => {
-    const list = CreateElement('li', tab, 'list', 'list');
-    tabList.appendChild(list);
-  });
+  const doTabs = (items, list) => {
+    for (let i = 0; i < items.length; i += 1) {
+      const li = CreateElement('li', items[i], 'list', `list${i + 1}`);
+      li.setAttribute('data-val', i);
+      list.appendChild(li);
+    }
+    return list;
+  };
 
 
-  nav.appendChild(tabList);
+  nav.appendChild(doTabs(navItems, tabList));
   const tabs = tabList.children;
 
   return { nav, tabs };

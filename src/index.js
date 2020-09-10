@@ -1,5 +1,6 @@
 import setHeader from './modules/pageHeader';
 import createTabs from './modules/tabs';
+import HomePage from './modules/homePage';
 
 const pageTabs = Array.from(createTabs.tabs);
 
@@ -16,3 +17,6 @@ pageTabs.forEach(tab => {
     alert(tab.innerText);
   });
 });
+
+const home = new HomePage('home-page');
+console.log(home);
