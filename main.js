@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/pageHeader */ \"./src/modules/pageHeader.js\");\n\n\nconst startPage = () => {\n  const parentContainer = document.getElementById('content');\n  parentContainer.appendChild(_modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__[\"default\"].headerContainer);\n};\n\nstartPage();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/pageHeader */ \"./src/modules/pageHeader.js\");\n\n\nconst render = () => {\n  const parentContainer = document.getElementById('content');\n\n  parentContainer.appendChild(_modules_pageHeader__WEBPACK_IMPORTED_MODULE_0__[\"default\"].headerContainer);\n};\n\nrender();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -117,7 +117,19 @@ eval("const CreateElement = (name, text, id = '', classname = '') => {\n  const 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements */ \"./src/modules/domElements.js\");\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_domElements__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst setHeader = (() => {\n  const headerContainer = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('div', '');\n  const header = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('h1', 'Klass Restaurant', 'h-text', 'h-text');\n\n  headerContainer.appendChild(header);\n\n  return { headerContainer };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (setHeader);\n\n//# sourceURL=webpack:///./src/modules/pageHeader.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements */ \"./src/modules/domElements.js\");\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_domElements__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabs */ \"./src/modules/tabs.js\");\n\n\n\nconst setHeader = (() => {\n  const headerContainer = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('header', '');\n  const header = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('h1', 'Klass Restaurant', 'h-text', 'h-text');\n\n  headerContainer.appendChild(header);\n  headerContainer.appendChild(_tabs__WEBPACK_IMPORTED_MODULE_1__[\"default\"].nav);\n\n  return { headerContainer };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (setHeader);\n\n//# sourceURL=webpack:///./src/modules/pageHeader.js?");
+
+/***/ }),
+
+/***/ "./src/modules/tabs.js":
+/*!*****************************!*\
+  !*** ./src/modules/tabs.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements */ \"./src/modules/domElements.js\");\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_domElements__WEBPACK_IMPORTED_MODULE_0__);\n\n\nconst createTabs = (() => {\n  const nav = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('nav', '', 'navbar', 'navbar');\n  const tabList = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('ul', '', 'tabs');\n  const navItems = ['Home', 'Our Menu', 'Get in touch'];\n\n  navItems.forEach((tab) => {\n    const list = _domElements__WEBPACK_IMPORTED_MODULE_0___default()('li', tab, 'list', 'list');\n    tabList.appendChild(list);\n  });\n\n\n  nav.appendChild(tabList);\n\n  return { nav };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (createTabs);\n\n\n//# sourceURL=webpack:///./src/modules/tabs.js?");
 
 /***/ })
 
