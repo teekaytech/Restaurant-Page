@@ -1,9 +1,8 @@
 import CreateElement from './domElements';
 
 class Page {
-  constructor(name, title, footer) {
+  constructor(name, title) {
     this.name = name;
-    this.footer = footer;
     this.title = title;
   }
 
@@ -22,7 +21,8 @@ class Page {
   }
 
   createFooter() {
-    return CreateElement('footer', this.footer, 'footer', 'footer');
+    this.footer = CreateElement('footer', '(@) Klass Restaurant, 2020', 'footer', 'footer');
+    return this.footer;
   }
 }
 

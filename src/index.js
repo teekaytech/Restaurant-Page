@@ -7,12 +7,7 @@ import HomePage from './modules/homePage';
 const pageTabs = Array.from(createTabs.tabs);
 const parentContainer = document.getElementById('content');
 const mainContainer = CreateElement('main', null, 'main');
-const home = new HomePage(
-  'home-page',
-  'Welcome!',
-  '(@) Klass Restaurant, 2020',
-  '',
-);
+const home = new HomePage('home-page', 'Welcome!');
 
 const render = () => {
   parentContainer.appendChild(setHeader.headerContainer);
