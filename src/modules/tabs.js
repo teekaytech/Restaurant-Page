@@ -12,8 +12,9 @@ const createTabs = (() => {
 
 
   nav.appendChild(tabList);
+  const tabs = tabList.children;
 
-  return { nav };
+  return { nav, tabs };
 })();
 
 export default createTabs;
