@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch"
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   "homepage": "https://github.com/teekaytech/Restaurant-Page#readme",
   "devDependencies": {
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {}
 }
