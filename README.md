@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/teekaytech/Tic-Tac-Toe-JS/666767bd321c87d28750ee236905de32a1627c83/index.html" target="_blank">Restaurant Page</a>
+<a href="https://teekaytech.github.io/Restaurant-Page/" target="_blank">Restaurant Page</a>
 
 ## Getting Started
 
