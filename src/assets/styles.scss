@@ -1,8 +1,54 @@
+$main-bg: rgb(236, 236, 236);
+$content: #fff;
+
+@mixin conSize() {
+  width: 90%;
+  margin: 0 auto;
+}
+
 body {
-  background-color: green;
+  background-color: $main-bg;
   main {
-    width: 90%;
-    margin: 0 auto;
-    background-color: white;
+    @include conSize();
+    background-color: $content;
   }
+
+  .header {
+    text-align: center;
+
+    .navbar {
+      @include conSize();
+      background-color: $content;
+
+      .tabs {
+        list-style: none;
+        margin: 0;
+
+        .list {
+          display: inline-block;
+          margin: 0 7px;
+          padding: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    // border-radius: 5px;
+
+    .title {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.current-page {
+  background-color: red;
+  color: $content;
 }

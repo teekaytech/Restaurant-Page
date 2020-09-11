@@ -13,7 +13,9 @@ const home = new Home('home-page', 'Welcome!');
 const menu = new Menu('menu-page', 'Our Menu!');
 const contact = new Contact('contact-page', 'Contact Us');
 
-const showPage = (page) => {
+const showPage = (page, tab = false) => {
+  createTabs.clearTabStyle(pageTabs);
+  createTabs.styleCurrentTab(tab);
   mainContainer.innerHTML = '';
   mainContainer.appendChild(page.joinContents());
 };
@@ -24,21 +26,19 @@ const render = () => {
   showPage(home);
 };
 
-render();
-
 pageTabs.forEach(tab => {
   tab.addEventListener('click', () => {
     switch (tab.dataset.val) {
       case '0':
-        showPage(home);
+        showPage(home, tab);
         break;
 
       case '1':
-        showPage(menu);
+        showPage(menu, tab);
         break;
 
       case '2':
-        showPage(contact);
+        showPage(contact, tab);
         break;
 
       default:
@@ -47,3 +47,5 @@ pageTabs.forEach(tab => {
     }
   });
 });
+
+render();
