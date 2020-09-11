@@ -6,7 +6,6 @@ import menu3 from '../assets/images/menu3.png';
 import menu4 from '../assets/images/menu4.png';
 import menu5 from '../assets/images/menu5.png';
 
-
 class Menu extends Page {
   description() {
     this.descContainer = CreateElement('p', null, 'desc', 'desc');
@@ -32,7 +31,7 @@ class Menu extends Page {
 
   makeMenu(title, img, i) {
     const menuPark = CreateElement('div', '', 'menu', 'menu');
-    menuPark.appendChild(CreateElement('p', title, 'title', `title title-${i}`));
+    menuPark.appendChild(CreateElement('p', title, 'title', `menu-title title-${i}`));
     this.menuImg = CreateElement('img', null, 'home-img', 'home-img');
     this.menuImg.src = img;
     menuPark.appendChild(this.menuImg);
@@ -47,7 +46,6 @@ class Menu extends Page {
     }
     return allMenu;
   }
-
 
   joinContents() {
     const superContent = this.prepareContent();

@@ -8,4 +8,4 @@ const CreateElement = (name, text, id = null, classname = null) => {
   return element;
 };
 
-module.exports = CreateElement;
+export default CreateElement;
