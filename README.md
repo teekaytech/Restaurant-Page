@@ -1,13 +1,13 @@
 # Restaurant Page
 
-> A restaurant webpage project intended at practicalising lessons on ES6 classes/modules and webpack. The main goal of this project is for the student to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
+> A restaurant webpage project intended at practicalising lessons on ES6 classes/modules and webpack. The main goal of this project is for me to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
 
 ![screenshot](src/assets/images/screenshot.png)
 
 ## Built With
 
 - HTML
-- CSS (Bootstrap)
+- SASS
 - JavaScript (ES6)
 - Webpack
 - ESLint
