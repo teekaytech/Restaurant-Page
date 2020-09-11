@@ -10,8 +10,10 @@ $text: rgb(3, 27, 104);
 body {
   background-color: $main-bg;
   color: $text;
+
   main {
     @include conSize();
+
     background-color: $content;
   }
 
@@ -21,8 +23,10 @@ body {
     h1 {
       font-size: 55px;
     }
+
     .navbar {
       @include conSize();
+
       background-color: $content;
 
       .tabs {
