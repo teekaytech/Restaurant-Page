@@ -1,5 +1,6 @@
 $main-bg: rgb(236, 236, 236);
 $content: #fff;
+$text: rgb(3, 27, 104);
 
 @mixin conSize() {
   width: 90%;
@@ -8,6 +9,7 @@ $content: #fff;
 
 body {
   background-color: $main-bg;
+  color: $text;
   main {
     @include conSize();
     background-color: $content;
@@ -16,6 +18,9 @@ body {
   .header {
     text-align: center;
 
+    h1 {
+      font-size: 55px;
+    }
     .navbar {
       @include conSize();
       background-color: $content;
@@ -23,11 +28,13 @@ body {
       .tabs {
         list-style: none;
         margin: 0;
+        padding: 0;
 
         .list {
           display: inline-block;
           margin: 0 7px;
           padding: 20px;
+          font-size: 18px;
 
           &:hover {
             cursor: pointer;
@@ -38,17 +45,30 @@ body {
   }
 
   section {
+    text-align: center;
+    padding: 25px;
+    border-top: 10px solid $text;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    // border-radius: 5px;
 
     .title {
-      margin: 0;
+      margin: 20px 0;
       padding: 0;
+      font-size: 35px;
+    }
+
+    .desc {
+      font-size: 20px;
+    }
+
+    img {
+      width: 50%;
+      margin: 0 auto;
     }
   }
 }
 
 .current-page {
-  background-color: red;
+  background-color: $text;
+  border-radius: 5px;
   color: $content;
 }
