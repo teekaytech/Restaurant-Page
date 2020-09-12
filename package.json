@@ -1,12 +1,32 @@
 {
-  "name": "restaurant",
+  "name": "restaurant-page",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "> A restaurant webpage project intended at practicalising lessons on ES6 classes/modules and webpack. The main goal of this project is for the student to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teekaytech/Restaurant-Page.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teekaytech/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/teekaytech/Restaurant-Page#readme",
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
 }
